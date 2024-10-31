@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS friend;
-DROP TABLE IF EXISTS person;
 
 CREATE TABLE person (
     id INTEGER PRIMARY KEY,
@@ -23,4 +21,3 @@ SELECT p1.name AS person_name, p2.name AS friend_name
 FROM friend friendship
 JOIN person p1 ON friendship.id = p1.id
 JOIN person p2 ON friendship.id2 = p2.id;
-
